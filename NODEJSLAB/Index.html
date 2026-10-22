@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="utils.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Catalog</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Catalog</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <li><a href="Register.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="card">
+      <section class="catalog">
+        <div class="product">
+          <img src="./images/washing_machine.jpg" alt="washing machine">
+          <p>Washing Machine</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="product">
+          <img src="./images/belt.jpg" alt="belt">
+          <p>Belt</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="product">
+          <img src="./images/fridge.jpg" alt="fridge">
+          <p>Fridge</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="product">
+          <img src="./images/pant.jpg" alt="pant">
+          <p>Pant</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="product">
+          <img src="./images/shirt.jpg" alt="shirt">
+          <p>Shirt</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="product">
+          <img src="./images/shoes.jpg" alt="shoes">
+          <p>Shoes</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="product">
+          <img src="./images/sofa.jpg" alt="sofa">
+          <p>Sofa</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="product">
+          <img src="./images/tv.jpg" alt="TV">
+          <p>TV</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="product">
+          <img src="./images/watch.jpg" alt="watch">
+          <p>Watch</p>
+          <button>Add to cart</button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script>
+    // Add to Cart Functionality
+    document.querySelectorAll(".product button").forEach((button) => {
+      button.addEventListener("click", () => {
+        const productName = button.parentElement.querySelector("p").textContent;
+        alert(`${productName} added to cart!`);
+        // You can add logic to update the cart here
+      });
+    });
+  </script>
+</body>
+</html>
