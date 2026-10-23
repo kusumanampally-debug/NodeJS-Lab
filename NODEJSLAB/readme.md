@@ -18,3 +18,31 @@ Project Structure:
 10. images/ - Folder for storing images.
 
 
+
+
+Technologies Used
+
+- HTML5: To create the structure of web pages.
+- CSS3: To style the pages using Flexbox and Grid.
+- JavaScript: To add form validation and interactivity.
+
+Features
+
+- Registration page
+- Login page
+- Product catalogue
+- Shopping cart interface
+- Responsive web layout
+
+How to Run
+
+1. Open the project folder in Visual Studio Code.
+2. Open "index.html" in a web browser.
+3. Explore the available pages.
+
+Learning Outcomes
+
+- Learned HTML page structure.
+- Practiced CSS styling and responsive layouts.
+- Understood JavaScript validation.
+- Learned to organize project files and upload code to GitHub.
