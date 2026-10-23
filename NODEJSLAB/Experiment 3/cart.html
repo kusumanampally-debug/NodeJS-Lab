@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Cart - FBS</title>
+    <script>
+        // Function to validate the cart
+        function validateCart() {
+            // Get all quantities from the cart
+            var quantities = document.getElementsByName('quantity');
+            var valid = true;
+
+            // Loop through each quantity and check if it is a valid number
+            for (var i = 0; i < quantities.length; i++) {
+                var quantity = quantities[i].value;
+                if (isNaN(quantity) || quantity <= 0 || quantity % 1 !== 0) {
+                    alert("Please enter a valid positive integer for quantity.");
+                    quantities[i].focus();
+                    valid = false;
+                    break;
+                }
+            }
+
+            return valid;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <table width="100%" align="center" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <th width="20%"><img src="fbs.png" alt="FBS LOGO" width="130" height="100" /></th>
+                        <th colspan=4>
+                            <h1 style="color:white;">FBS - WORLD BEST ONLINE EBOOKS WEBSITE</h1>
+                        </th>
+                    </tr>
+                </table>
+            </header>
+            <nav>
+                <table width="100%" align="center" cellpadding="0" cellspacing="2">
+                    <tbody align="center" style="font-weight:bold;font-size:18px;">
+                        <tr>
+                            <td width="20%">
+                                <hr><a href="index.html">Home</a>
+                                <hr>
+                            </td>
+                            <td width="20%">
+                                <hr><a href="login.html">Login</a>
+                                <hr>
+                            </td>
+                            <td width="20%">
+                                <hr><a href="registration.html">Registration</a>
+                                <hr>
+                            </td>
+                            <td width="20%">
+                                <hr><a href="cart.html">Cart</a>
+                                <hr>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+        </div>
+
+        <div class="container1">
+            <div class="sidebar1"></div>
+            <div class="container2">
+                <main>
+                    <center>
+                        <h3>Cart</h3>
+                        <form name="cartForm" onsubmit="return validateCart()">
+                            <table width="100%" align="center">
+                                <tbody>
+                                    <tr>
+                                        <th width="40%">
+                                            <hr>Book Name
+                                            <hr>
+                                        </th>
+                                        <th width="20%">
+                                            <hr>Price
+                                            <hr>
+                                        </th>
+                                        <th width="20%">
+                                            <hr>Quantity
+                                            <hr>
+                                        </th>
+                                        <th width="20%">
+                                            <hr>Amount
+                                            <hr>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                                <tbody align="center">
+                                    <!-- Cart Item 1 -->
+                                    <tr>
+                                        <td>Java Programming</td>
+                                        <td>Rs. 2300/-</td>
+                                        <td><input type="number" name="quantity" value="2" min="1" step="1"></td>
+                                        <td>Rs. 4600/-</td>
+                                    </tr>
+                                    <!-- Cart Item 2 -->
+                                    <tr>
+                                        <td>Web Technologies</td>
+                                        <td>Rs. 3000/-</td>
+                                        <td><input type="number" name="quantity" value="1" min="1" step="1"></td>
+                                        <td>Rs. 3000/-</td>
+                                    </tr>
+                                    <!-- Total Amount -->
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <hr>
+                                            <font color="#996600">Total Amount:</font>
+                                            <hr>
+                                        </td>
+                                        <td>
+                                            <hr>3
+                                            <hr>
+                                        </td>
+                                        <td>
+                                            <hr>Rs. 7600/-
+                                            <hr>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <input type="submit" value="Update Cart">
+                        </form>
+                    </center>
+                </main>
+            </div>
+            <div class="sidebar2"></div>
+        </div>
+
+        <footer>
+            <font color="white">(C) 2024 All rights reserved by FBS ebooks</font>
+        </footer>
+    </div>
+</body>
+
+</html>
