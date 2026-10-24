@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE bookstore SYSTEM "bookstore.dtd">
+<bookstore>
+    <book>
+        <title>Web Technology</title>
+        <author>John Smith</author>
+        <price>450</price>
+    </book>
+    <book>
+        <title>Node.js Basics</title>
+        <author>David Kumar</author>
+        <price>550</price>
+    </book>
+</bookstore>
