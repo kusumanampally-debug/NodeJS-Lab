@@ -1,0 +1,63 @@
+#root {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #0002;
+}
+
+h1 {
+  text-align: center;
+  color: #2563eb;
+}
+
+.add-task {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.add-task input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.todo-item span {
+  flex: 1;
+}
+
+.completed {
+  color: #888;
+  text-decoration: line-through;
+}
+
+body {
+  margin: 0;
+  background: #eaf0f9;
+}
